@@ -1,24 +1,29 @@
-# README
+Install Gems:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+bundle install
+```
 
-Things you may want to cover:
+Run migrations:
+```
+rake db:migrate
+```
 
-* Ruby version
+Copy `config/data_urls.yml.example` to `config/data_urls.yml` and set correnc urls
 
-* System dependencies
+Init cron jobs:
+```
+whenever --update-crontab
+```
 
-* Configuration
+Start delayed jobs:
+```
+RAILS_ENV=development bin/delayed_job start
+```
 
-* Database creation
+Start rails server
+```
+rails c
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Open http://localhost:3000
