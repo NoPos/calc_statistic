@@ -1,0 +1,9 @@
+development:
+  client_info_url: 'https://example.com/api/v2/tests/client_info.json'
+  client_revenue_url: 'https://example.com/api/v2/tests/client_revenue.json'
+test:
+  client_info_url: 'https://example.com/api/v2/tests/client_info.json'
+  client_revenue_url: 'https://example.com/api/v2/tests/client_revenue.json'
+production:
+  client_info_url: 'https://example.com/api/v2/tests/client_info.json'
+  client_revenue_url: 'https://example.com/api/v2/tests/client_revenue.json'

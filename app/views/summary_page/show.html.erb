@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<table>
+  <tr><td><b>Highest Revenue All Time</b></td></tr>
+    <tr><td>Full Name:</td><td><%= @highest_revenue_all_time.full_name %></td></tr>
+  <tr><td>Revenue Value:</td><td><%= @highest_revenue_all_time.revenue %></td></tr>
+</table>
+-----------------
+<table>
+  <tr><td><b>Lowest Revenue All Time</b></td></tr>
+  <tr><td>Full Name:</td><td><%= @lowest_revenue_all_time.full_name %></td></tr>
+  <tr><td>Revenue Value:</td><td><%= @lowest_revenue_all_time.revenue %></td></tr>
+</table>
+-----------------
+<table>
+  <tr><td><b>Lowest Revenue Last Event</b></td></tr>
+  <tr><td>Full Name:</td><td><%= @lowest_revenue_last_event.full_name %></td></tr>
+  <tr><td>Revenue Value:</td><td><%= @lowest_revenue_last_event.revenue %></td></tr>
+</table>
+-----------------
+<table>
+  <tr><td><b>Total Revenue Last Event</b></td></tr>
+  <tr><td>Revenue Value:</td><td><%= @total_revenue_last_event.revenue %></td></tr>
+</table>
+-----------------
+<table>
+  <tr><td><b>Top 15 highest Clients Revenue</b></td><td></td></tr>
+  <tr><td></td><td></td></tr>
+  <tr><td>Full Name</td><td>Revenue</td></tr>
+  <% @top_highest_revenue.each do |client| %>
+    <tr><td><%= client.full_name %></td><td><%= client.revenue %></td></tr>
+  <% end %>
+</table>
+</body>
+</html>
